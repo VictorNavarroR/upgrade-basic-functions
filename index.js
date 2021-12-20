@@ -26,4 +26,17 @@ function findLongestWord(param) {
 }
 
 
-console.log(findLongestWord(avengers));
+//Iteration 3
+const numbers = [1, 2, 3, 5, 45, 37, 58];
+
+function sumAll(param) {
+  // insert code
+  let finalValue = 0;
+  param.forEach( number => {
+    finalValue +=  number;
+  });
+
+  return finalValue;
+}
+
+console.log(sumAll(numbers))

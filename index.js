@@ -11,7 +11,7 @@ function findLongestWord(param) {
   // insert code
     if(!Array.isArray(param)) {
       return 'Esta funcion solo recibe arrays como argumentos';
-  }
+    }
     let heroLargo = 0;
     let finalValue = '';
   
@@ -31,6 +31,9 @@ const numbers = [1, 2, 3, 5, 45, 37, 58];
 
 function sumAll(param) {
   // insert code
+  if(!Array.isArray(param)) {
+    return 'Esta funcion solo recibe arrays como argumentos';
+  }
   let finalValue = 0;
   param.forEach( number => {
     finalValue +=  number;
@@ -40,3 +43,19 @@ function sumAll(param) {
 }
 
 console.log(sumAll(numbers))
+
+//Iteration 4
+const numberss = [12, 21, 38, 5, 45, 37, 6];
+function average(param) {
+    // insert code
+    if(!Array.isArray(param)) {
+        return 'Esta funcion solo recibe arrays como argumentos';
+    }
+    const itemsCount = param.length;
+    const total = sumAll(param);
+    const promedio = total / itemsCount;
+
+    return promedio;
+
+}
+console.log(average(numberss));

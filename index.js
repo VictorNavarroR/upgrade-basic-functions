@@ -59,3 +59,22 @@ function average(param) {
 
 }
 console.log(average(numberss));
+
+//Iteraation 5
+const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+function averageWord(param) {
+  // insert code
+  let arrayNumbers = [];
+
+  param.forEach( item => {
+      if(typeof item == "string") {
+        arrayNumbers.push(item.length);
+      } else {
+        arrayNumbers.push(item);
+      }
+      
+  });
+  return average(arrayNumbers);
+}
+
+console.log(averageWord(mixedElements));

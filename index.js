@@ -107,3 +107,30 @@ const duplicates = [
 const newDuplicates = removeDuplicates(duplicates);
 
 console.log(newDuplicates);
+
+//Iteration 7
+const nameFinder = [
+    'Peter',
+    'Steve',
+    'Tony',
+    'Natasha',
+    'Clint',
+    'Logan',
+    'Xabier',
+    'Bruce',
+    'Peggy',
+    'Jessica',
+    'Marc'
+  ];
+  function finderName(nombre, arr) {
+    // insert code
+    const result = arr.filter( item => item==nombre);
+    if(result == nombre) {
+      let index = arr.indexOf(nombre);
+      return [true, index];
+    }
+    
+    return false;
+  }
+
+console.log(finderName('Peggy', nameFinder));

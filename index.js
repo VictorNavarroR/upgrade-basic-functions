@@ -134,3 +134,38 @@ const nameFinder = [
   }
 
 console.log(finderName('Peggy', nameFinder));
+
+//Iteration 8
+const counterWords = [
+    'code',
+    'repeat',
+    'eat',
+    'sleep',
+    'code',
+    'enjoy',
+    'sleep',
+    'code',
+    'enjoy',
+    'upgrade',
+    'code'
+  ];
+  
+  function repeatCounter(param) {
+    // insert code
+    let items = new Set();
+    param.forEach( (item, index) => {
+      let counter = 0;
+        param.forEach( subitem => {
+            if(item == subitem) {
+                counter += 1;
+            }
+        });
+        
+       items.add(`${item} se repite ${counter} veces`); 
+    });
+    items = Array.from(items);
+    return items;
+  
+  }
+  
+  console.log(repeatCounter(counterWords));
